@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <!-- 列出课程列表标题，每个主课程下面可能有几个子主题 -->
+    <string-array name="main_courses">
+		<item>(001)Getting Started</item>
+		<item>(002)Building Apps with Content Sharing</item>
+		<item>(003)Building Apps with Multimedia</item>
+		<item>(004)Building Apps with Graphics and Animation</item>
+		<item>(005)Building Apps with Connectivity and the Cloud</item>
+		<item>(006)Building Apps with User Info and Location</item>        
+    </string-array>
+    
+    <string-array name="main_courses_006">
+		<item>(01)Accessing Contacts Data</item>
+		<item>(02)Making Your App Location-Aware</item>        
+    </string-array>
+
+</resources>
