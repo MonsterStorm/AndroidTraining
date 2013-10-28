@@ -33,7 +33,19 @@ public final class R {
         /**  列出课程列表标题，每个主课程下面可能有几个子主题 
          */
         public static final int main_courses=0x7f0d0000;
-        public static final int main_courses_006=0x7f0d0001;
+        public static final int main_courses_001=0x7f0d0001;
+        public static final int main_courses_002=0x7f0d0002;
+        public static final int main_courses_003=0x7f0d0003;
+        public static final int main_courses_004=0x7f0d0004;
+        public static final int main_courses_005=0x7f0d0005;
+        public static final int main_courses_006=0x7f0d0006;
+        public static final int main_courses_007=0x7f0d0007;
+        public static final int main_courses_008=0x7f0d0008;
+        public static final int main_courses_009=0x7f0d0009;
+        public static final int main_courses_010=0x7f0d000a;
+        public static final int main_courses_011=0x7f0d000b;
+        public static final int main_courses_012=0x7f0d000c;
+        public static final int main_courses_013=0x7f0d000d;
     }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
