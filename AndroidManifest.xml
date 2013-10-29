@@ -27,7 +27,7 @@
             android:name="com.storm.androidtraining.SubActivity"
             android:label="@string/app_name" />
         <activity
-            android:name="com.storm.androidtraining.C006.C006Activity"
+            android:name="com.storm.androidtraining.ContentActivity"
             android:label="@string/app_name" />
     </application>
     

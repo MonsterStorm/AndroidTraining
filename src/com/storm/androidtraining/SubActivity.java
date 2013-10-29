@@ -4,9 +4,9 @@ import java.util.Arrays;
 import java.util.List;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.TextView;
@@ -16,12 +16,11 @@ import com.cst.stormdroid.adapter.BaseViewHolder;
 import com.cst.stormdroid.adapter.SDBaseArrayAdapter;
 import com.cst.stormdroid.utils.intent.IntentUtil;
 import com.cst.stormdroid.utils.string.StringUtil;
-import com.cst.stormdroid.utils.toast.ToastUtil;
-import com.storm.androidtraining.C006.C006Activity;
 
 public class SubActivity extends SDBaseListActivity {
 	private TextView tvTitle;
 	private String courseId;
+	private SDBaseArrayAdapter<BaseViewHolder, String> mAdapter;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +38,8 @@ public class SubActivity extends SDBaseListActivity {
 		int array = getIntent().getIntExtra("array", 0);
 
 		if (array != 0) {
-			setListAdapter(new SubAdapter(this, Arrays.asList(getResources().getStringArray(array))));
+			mAdapter = new SubAdapter(this, Arrays.asList(getResources().getStringArray(array)));
+			setListAdapter(mAdapter);
 		}
 
 		bindActions();
@@ -49,24 +49,20 @@ public class SubActivity extends SDBaseListActivity {
 		getListView().setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-				String activityName = "C" + courseId + "Activity";
-				try {
-					Class clazz = Class.forName(SubActivity.class.getPackage().getName() + ".C" + courseId + "." + activityName);
-					Intent intent = new IntentUtil.Builder(SubActivity.this, clazz).toIntent();
-					startActivity(intent);
-				} catch (Exception e) {
-					e.printStackTrace();
-					ToastUtil.debugToast(SubActivity.class.getPackage().getName() + ".C" + courseId + "." + activityName + " 类不存在!");
+				String packageName = SubActivity.class.getPackage().getName();
+
+				//Class clazz = Class.forName(SubActivity.class.getPackage().getName() + ".C" + courseId + "." + activityName);
+
+				IntentUtil.Builder builder = new IntentUtil.Builder(SubActivity.this, ContentActivity.class);
+				builder.add("package", packageName + ".C" + courseId);
+				builder.add("course", "C" + courseId);
+				if(mAdapter != null){
+					String item = mAdapter.getItem(position);
+					builder.add("sub", item.substring(item.indexOf("(") + 1, item.lastIndexOf(")")));
 				}
+				startActivity(builder.toIntent());
 			}
 		});
-	}
-
-	public static void showSubListActivity(Context context, String title, int array) {
-		IntentUtil.Builder builder = new IntentUtil.Builder(context, SubActivity.class);
-		builder.add("title", title);
-		builder.add("array", array);
-		context.startActivity(builder.toIntent());
 	}
 
 	private class SubAdapter extends SDBaseArrayAdapter<BaseViewHolder, String> {
@@ -101,5 +97,11 @@ public class SubActivity extends SDBaseListActivity {
 			public TextView tvText;
 		}
 	}
-
+	
+	public static void showSubListActivity(Context context, String title, int array) {
+		IntentUtil.Builder builder = new IntentUtil.Builder(context, SubActivity.class);
+		builder.add("title", title);
+		builder.add("array", array);
+		context.startActivity(builder.toIntent());
+	}
 }

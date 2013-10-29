@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.storm.androidtraining.C000.C00001ViewGroup
+        android:id="@+id/c00001ViewGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#00dd00" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear" />
+
+            <Button
+                android:id="@+id/btnAddChild"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add A Child" />
+            
+            <Button
+                android:id="@+id/btnRemoveChild"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remove Child" />
+        </TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call ViewGroup Method:" />
+
+        <TableRow>
+
+            <Button
+                android:id="@android:id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="invalidate" />
+
+            <Button
+                android:id="@android:id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="requestLayout" />
+
+            <Button
+                android:id="@android:id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="requestFocus" />
+        </TableRow>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call View\'s (which is viewgroup\'s child) Method:" />
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="invalidate" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="requestLayout" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="requestFocus" />
+        </TableRow>
+    </TableLayout>
+
+    <EditText
+        android:id="@android:id/edit"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="top|left" />
+
+</LinearLayout>

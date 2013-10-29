@@ -33,19 +33,20 @@ public final class R {
         /**  列出课程列表标题，每个主课程下面可能有几个子主题 
          */
         public static final int main_courses=0x7f0d0000;
-        public static final int main_courses_001=0x7f0d0001;
-        public static final int main_courses_002=0x7f0d0002;
-        public static final int main_courses_003=0x7f0d0003;
-        public static final int main_courses_004=0x7f0d0004;
-        public static final int main_courses_005=0x7f0d0005;
-        public static final int main_courses_006=0x7f0d0006;
-        public static final int main_courses_007=0x7f0d0007;
-        public static final int main_courses_008=0x7f0d0008;
-        public static final int main_courses_009=0x7f0d0009;
-        public static final int main_courses_010=0x7f0d000a;
-        public static final int main_courses_011=0x7f0d000b;
-        public static final int main_courses_012=0x7f0d000c;
-        public static final int main_courses_013=0x7f0d000d;
+        public static final int main_courses_000=0x7f0d0001;
+        public static final int main_courses_001=0x7f0d0002;
+        public static final int main_courses_002=0x7f0d0003;
+        public static final int main_courses_003=0x7f0d0004;
+        public static final int main_courses_004=0x7f0d0005;
+        public static final int main_courses_005=0x7f0d0006;
+        public static final int main_courses_006=0x7f0d0007;
+        public static final int main_courses_007=0x7f0d0008;
+        public static final int main_courses_008=0x7f0d0009;
+        public static final int main_courses_009=0x7f0d000a;
+        public static final int main_courses_010=0x7f0d000b;
+        public static final int main_courses_011=0x7f0d000c;
+        public static final int main_courses_012=0x7f0d000d;
+        public static final int main_courses_013=0x7f0d000e;
     }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
@@ -1468,7 +1469,14 @@ containing a value of this type.
         public static final int abs__textButton=0x7f060017;
         public static final int abs__title=0x7f06001f;
         public static final int abs__up=0x7f06000b;
-        public static final int action_settings=0x7f060039;
+        public static final int action_settings=0x7f060040;
+        public static final int btn4=0x7f06003b;
+        public static final int btn5=0x7f06003c;
+        public static final int btn6=0x7f06003d;
+        public static final int btnAddChild=0x7f060039;
+        public static final int btnClear=0x7f060038;
+        public static final int btnRemoveChild=0x7f06003a;
+        public static final int c00001ViewGroup=0x7f060037;
         public static final int content=0x7f060036;
         public static final int disableHome=0x7f060009;
         public static final int edit_query=0x7f06002a;
@@ -1477,15 +1485,15 @@ containing a value of this type.
         public static final int ldpi=0x7f060010;
         public static final int listMode=0x7f060002;
         public static final int mdpi=0x7f060011;
-        public static final int menu_a=0x7f06003a;
-        public static final int menu_group=0x7f06003b;
-        public static final int menu_group_a=0x7f06003c;
+        public static final int menu_a=0x7f060041;
+        public static final int menu_group=0x7f060042;
+        public static final int menu_group_a=0x7f060043;
         public static final int normal=0x7f060001;
-        public static final int panel=0x7f060038;
+        public static final int panel=0x7f06003f;
         public static final int showCustom=0x7f060008;
         public static final int showHome=0x7f060005;
         public static final int showTitle=0x7f060007;
-        public static final int stub=0x7f060037;
+        public static final int stub=0x7f06003e;
         public static final int tabMode=0x7f060003;
         public static final int useLogo=0x7f060004;
         public static final int wrap_content=0x7f060000;
@@ -1519,17 +1527,18 @@ containing a value of this type.
         public static final int activity_frame_content=0x7f030015;
         public static final int activity_main=0x7f030016;
         public static final int activity_sub=0x7f030017;
-        public static final int fg_c00601=0x7f030018;
-        public static final int frame_content=0x7f030019;
-        public static final int listitem_default=0x7f03001a;
-        public static final int listview=0x7f03001b;
-        public static final int sherlock_spinner_dropdown_item=0x7f03001c;
-        public static final int sherlock_spinner_item=0x7f03001d;
-        public static final int textview=0x7f03001e;
-        public static final int ui_emptylayout=0x7f03001f;
-        public static final int ui_loadingindicator=0x7f030020;
-        public static final int viewstub=0x7f030021;
-        public static final int viewstub_child=0x7f030022;
+        public static final int fg_c00001=0x7f030018;
+        public static final int fg_c00601=0x7f030019;
+        public static final int frame_content=0x7f03001a;
+        public static final int listitem_default=0x7f03001b;
+        public static final int listview=0x7f03001c;
+        public static final int sherlock_spinner_dropdown_item=0x7f03001d;
+        public static final int sherlock_spinner_item=0x7f03001e;
+        public static final int textview=0x7f03001f;
+        public static final int ui_emptylayout=0x7f030020;
+        public static final int ui_loadingindicator=0x7f030021;
+        public static final int viewstub=0x7f030022;
+        public static final int viewstub_child=0x7f030023;
     }
     public static final class menu {
         public static final int main=0x7f0e0000;

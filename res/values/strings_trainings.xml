@@ -3,6 +3,7 @@
 
     <!-- 列出课程列表标题，每个主课程下面可能有几个子主题 -->
     <string-array name="main_courses">
+        <item>(000)Storm!!!</item>
         <item>(001)Getting Started</item>
         <item>(002)Building Apps with Content Sharing</item>
         <item>(003)Building Apps with Multimedia</item>
@@ -16,6 +17,9 @@
         <item>(011)Best Practices for Security and Privacy</item>
         <item>(012)Best Practices for Testing</item>
         <item>(013)Using Google Play to Distribute and Monetize</item>
+    </string-array>
+    <string-array name="main_courses_000">
+        <item>(01)View\'s draw process: onMeasure, onLayout, onDraw and etc</item>
     </string-array>
     <string-array name="main_courses_001">
         <item>(01)Building Your First App</item>
