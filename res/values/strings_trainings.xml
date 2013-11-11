@@ -24,6 +24,7 @@
     </string-array>
     <string-array name="main_courses_001">
         <item>(01)Dialog Open Animation</item>
+        <item>(02)Text Animation</item>
     </string-array>
     <string-array name="main_courses_002">
         <item>(01)Building Your First App</item>

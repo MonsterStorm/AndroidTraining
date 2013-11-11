@@ -52,7 +52,9 @@ public class C00101Fragment extends SDBaseSupportFragment {
 				ivTmp2.setOnAnimationListener(new OnAnimationListener() {
 					@Override
 					public void onAnimationStart() {
-						Animation animation = AnimationUtils.loadAnimation(getActivity(), R.anim.scala_in);
+						dialog.show();
+						
+						Animation animation = AnimationUtils.loadAnimation(getActivity(), R.anim.scale_in);
 						animation.setFillAfter(true);
 						mContentView.startAnimation(animation);
 					}

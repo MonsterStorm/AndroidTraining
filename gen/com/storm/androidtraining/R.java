@@ -23,7 +23,17 @@ public final class R {
         public static final int anim_slide_right_in=0x7f04000b;
         public static final int anim_slide_right_out=0x7f04000c;
         public static final int anim_translate=0x7f04000d;
-        public static final int scala_in=0x7f04000e;
+        public static final int push_left_in=0x7f04000e;
+        public static final int push_left_out=0x7f04000f;
+        public static final int push_up_in=0x7f040010;
+        public static final int push_up_out=0x7f040011;
+        public static final int rotate_in=0x7f040012;
+        public static final int rotate_out=0x7f040013;
+        public static final int scale_in=0x7f040014;
+        public static final int scalefade_in=0x7f040015;
+        public static final int scalefade_in2=0x7f040016;
+        public static final int scalefade_out=0x7f040017;
+        public static final int scalefade_out2=0x7f040018;
     }
     public static final class animator {
         public static final int animator_animation=0x7f050000;
@@ -1473,7 +1483,10 @@ containing a value of this type.
         public static final int abs__textButton=0x7f060017;
         public static final int abs__title=0x7f06001f;
         public static final int abs__up=0x7f06000b;
-        public static final int action_settings=0x7f060042;
+        public static final int action_settings=0x7f060046;
+        public static final int btn1=0x7f060040;
+        public static final int btn2=0x7f060041;
+        public static final int btn3=0x7f060042;
         public static final int btn4=0x7f06003d;
         public static final int btn5=0x7f06003e;
         public static final int btn6=0x7f06003f;
@@ -1489,19 +1502,20 @@ containing a value of this type.
         public static final int ldpi=0x7f060010;
         public static final int listMode=0x7f060002;
         public static final int mdpi=0x7f060011;
-        public static final int menu_a=0x7f060043;
-        public static final int menu_group=0x7f060044;
-        public static final int menu_group_a=0x7f060045;
+        public static final int menu_a=0x7f060047;
+        public static final int menu_group=0x7f060048;
+        public static final int menu_group_a=0x7f060049;
         public static final int normal=0x7f060001;
-        public static final int panel=0x7f060041;
+        public static final int panel=0x7f060045;
         public static final int showCustom=0x7f060008;
         public static final int showHome=0x7f060005;
         public static final int showTitle=0x7f060007;
-        public static final int stub=0x7f060040;
+        public static final int stub=0x7f060044;
         public static final int tabMode=0x7f060003;
         public static final int tvTmp1=0x7f060037;
         public static final int tvTmp2=0x7f060038;
         public static final int useLogo=0x7f060004;
+        public static final int vfTmp=0x7f060043;
         public static final int wrap_content=0x7f060000;
         public static final int xhdpi=0x7f060013;
     }
@@ -1536,17 +1550,18 @@ containing a value of this type.
         public static final int dlg_c00101=0x7f030018;
         public static final int fg_c00001=0x7f030019;
         public static final int fg_c00101=0x7f03001a;
-        public static final int fg_c00701=0x7f03001b;
-        public static final int frame_content=0x7f03001c;
-        public static final int listitem_default=0x7f03001d;
-        public static final int listview=0x7f03001e;
-        public static final int sherlock_spinner_dropdown_item=0x7f03001f;
-        public static final int sherlock_spinner_item=0x7f030020;
-        public static final int textview=0x7f030021;
-        public static final int ui_emptylayout=0x7f030022;
-        public static final int ui_loadingindicator=0x7f030023;
-        public static final int viewstub=0x7f030024;
-        public static final int viewstub_child=0x7f030025;
+        public static final int fg_c00102=0x7f03001b;
+        public static final int fg_c00701=0x7f03001c;
+        public static final int frame_content=0x7f03001d;
+        public static final int listitem_default=0x7f03001e;
+        public static final int listview=0x7f03001f;
+        public static final int sherlock_spinner_dropdown_item=0x7f030020;
+        public static final int sherlock_spinner_item=0x7f030021;
+        public static final int textview=0x7f030022;
+        public static final int ui_emptylayout=0x7f030023;
+        public static final int ui_loadingindicator=0x7f030024;
+        public static final int viewstub=0x7f030025;
+        public static final int viewstub_child=0x7f030026;
     }
     public static final class menu {
         public static final int main=0x7f0e0000;
