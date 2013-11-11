@@ -1,4 +1,4 @@
-package com.storm.androidtraining.C006;
+package com.storm.androidtraining.C007;
 
 import android.annotation.SuppressLint;
 import android.database.Cursor;
@@ -24,7 +24,7 @@ import android.widget.ListView;
 import com.cst.stormdroid.fragment.SDBaseSupportFragment;
 import com.storm.androidtraining.R;
 
-public class C00601Fragment extends SDBaseSupportFragment implements LoaderManager.LoaderCallbacks<Cursor>, OnItemClickListener {
+public class C00701Fragment extends SDBaseSupportFragment implements LoaderManager.LoaderCallbacks<Cursor>, OnItemClickListener {
 	private EditText mEdit;
 	private Button mButton;
 	/*
@@ -69,7 +69,7 @@ public class C00601Fragment extends SDBaseSupportFragment implements LoaderManag
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		super.onCreateView(inflater, container, savedInstanceState);
-		View view = inflater.inflate(R.layout.fg_c00601, container, false);
+		View view = inflater.inflate(R.layout.fg_c00701, container, false);
 		mContactsList = (ListView) view.findViewById(android.R.id.list);
 		mEdit = (EditText) view.findViewById(android.R.id.edit);
 		mButton = (Button) view.findViewById(android.R.id.button1);
@@ -103,7 +103,7 @@ public class C00601Fragment extends SDBaseSupportFragment implements LoaderManag
 			@Override
 			public void onClick(View v) {
 				mSearchString = mEdit.getText().toString();
-				getLoaderManager().restartLoader(0, null, (LoaderManager.LoaderCallbacks) C00601Fragment.this);
+				getLoaderManager().restartLoader(0, null, (LoaderManager.LoaderCallbacks) C00701Fragment.this);
 			}
 		});
 

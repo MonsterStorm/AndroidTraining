@@ -23,6 +23,7 @@ public final class R {
         public static final int anim_slide_right_in=0x7f04000b;
         public static final int anim_slide_right_out=0x7f04000c;
         public static final int anim_translate=0x7f04000d;
+        public static final int scala_in=0x7f04000e;
     }
     public static final class animator {
         public static final int animator_animation=0x7f050000;
@@ -47,6 +48,7 @@ public final class R {
         public static final int main_courses_011=0x7f0d000c;
         public static final int main_courses_012=0x7f0d000d;
         public static final int main_courses_013=0x7f0d000e;
+        public static final int main_courses_014=0x7f0d000f;
     }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
@@ -1428,6 +1430,8 @@ containing a value of this type.
         public static final int abs__toast_frame=0x7f02006f;
         public static final int ic_launcher=0x7f020070;
         public static final int list_animation=0x7f020071;
+        public static final int shape_blue=0x7f020072;
+        public static final int shape_gray=0x7f020073;
     }
     public static final class id {
         public static final int abs__action_bar=0x7f060024;
@@ -1469,14 +1473,14 @@ containing a value of this type.
         public static final int abs__textButton=0x7f060017;
         public static final int abs__title=0x7f06001f;
         public static final int abs__up=0x7f06000b;
-        public static final int action_settings=0x7f060040;
-        public static final int btn4=0x7f06003b;
-        public static final int btn5=0x7f06003c;
-        public static final int btn6=0x7f06003d;
-        public static final int btnAddChild=0x7f060039;
-        public static final int btnClear=0x7f060038;
-        public static final int btnRemoveChild=0x7f06003a;
-        public static final int c00001ViewGroup=0x7f060037;
+        public static final int action_settings=0x7f060042;
+        public static final int btn4=0x7f06003d;
+        public static final int btn5=0x7f06003e;
+        public static final int btn6=0x7f06003f;
+        public static final int btnAddChild=0x7f06003b;
+        public static final int btnClear=0x7f06003a;
+        public static final int btnRemoveChild=0x7f06003c;
+        public static final int c00001ViewGroup=0x7f060039;
         public static final int content=0x7f060036;
         public static final int disableHome=0x7f060009;
         public static final int edit_query=0x7f06002a;
@@ -1485,16 +1489,18 @@ containing a value of this type.
         public static final int ldpi=0x7f060010;
         public static final int listMode=0x7f060002;
         public static final int mdpi=0x7f060011;
-        public static final int menu_a=0x7f060041;
-        public static final int menu_group=0x7f060042;
-        public static final int menu_group_a=0x7f060043;
+        public static final int menu_a=0x7f060043;
+        public static final int menu_group=0x7f060044;
+        public static final int menu_group_a=0x7f060045;
         public static final int normal=0x7f060001;
-        public static final int panel=0x7f06003f;
+        public static final int panel=0x7f060041;
         public static final int showCustom=0x7f060008;
         public static final int showHome=0x7f060005;
         public static final int showTitle=0x7f060007;
-        public static final int stub=0x7f06003e;
+        public static final int stub=0x7f060040;
         public static final int tabMode=0x7f060003;
+        public static final int tvTmp1=0x7f060037;
+        public static final int tvTmp2=0x7f060038;
         public static final int useLogo=0x7f060004;
         public static final int wrap_content=0x7f060000;
         public static final int xhdpi=0x7f060013;
@@ -1527,18 +1533,20 @@ containing a value of this type.
         public static final int activity_frame_content=0x7f030015;
         public static final int activity_main=0x7f030016;
         public static final int activity_sub=0x7f030017;
-        public static final int fg_c00001=0x7f030018;
-        public static final int fg_c00601=0x7f030019;
-        public static final int frame_content=0x7f03001a;
-        public static final int listitem_default=0x7f03001b;
-        public static final int listview=0x7f03001c;
-        public static final int sherlock_spinner_dropdown_item=0x7f03001d;
-        public static final int sherlock_spinner_item=0x7f03001e;
-        public static final int textview=0x7f03001f;
-        public static final int ui_emptylayout=0x7f030020;
-        public static final int ui_loadingindicator=0x7f030021;
-        public static final int viewstub=0x7f030022;
-        public static final int viewstub_child=0x7f030023;
+        public static final int dlg_c00101=0x7f030018;
+        public static final int fg_c00001=0x7f030019;
+        public static final int fg_c00101=0x7f03001a;
+        public static final int fg_c00701=0x7f03001b;
+        public static final int frame_content=0x7f03001c;
+        public static final int listitem_default=0x7f03001d;
+        public static final int listview=0x7f03001e;
+        public static final int sherlock_spinner_dropdown_item=0x7f03001f;
+        public static final int sherlock_spinner_item=0x7f030020;
+        public static final int textview=0x7f030021;
+        public static final int ui_emptylayout=0x7f030022;
+        public static final int ui_loadingindicator=0x7f030023;
+        public static final int viewstub=0x7f030024;
+        public static final int viewstub_child=0x7f030025;
     }
     public static final class menu {
         public static final int main=0x7f0e0000;
@@ -1710,6 +1718,7 @@ containing a value of this type.
         public static final int Widget_Sherlock_SearchAutoCompleteTextView=0x7f0c0034;
         public static final int Widget_Sherlock_Spinner_DropDown_ActionBar=0x7f0c0024;
         public static final int Widget_Sherlock_TextView_SpinnerItem=0x7f0c0032;
+        public static final int c00101dialog=0x7f0c005b;
     }
     public static final class styleable {
         /**  com.cst.stormdroid.ui.AsyncImageView 

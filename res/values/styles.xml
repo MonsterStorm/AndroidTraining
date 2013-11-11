@@ -17,4 +17,12 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
+    
+    <style name="c00101dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item><!-- disable background dim -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    
 </resources>
