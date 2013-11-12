@@ -1,14 +1,19 @@
 package com.storm.androidtraining.C001;
 
+import java.util.Random;
+
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.ViewFlipper;
 
 import com.cst.stormdroid.fragment.SDBaseSupportFragment;
@@ -16,6 +21,7 @@ import com.storm.androidtraining.R;
 
 public class C00102Fragment extends SDBaseSupportFragment {
 	private ViewFlipper vfTmp;
+	private Button btn1;
 
 	private Spinner spinner1;
 	private Spinner spinner2;
@@ -37,6 +43,7 @@ public class C00102Fragment extends SDBaseSupportFragment {
 		spinner1 = (Spinner) view.findViewById(R.id.spinner1);
 		spinner2 = (Spinner) view.findViewById(R.id.spinner2);
 
+		btn1 = (Button) view.findViewById(R.id.btn1);
 		vfTmp = (ViewFlipper) view.findViewById(R.id.vfTmp);
 		vfTmp.startFlipping();
 		return view;
@@ -75,6 +82,18 @@ public class C00102Fragment extends SDBaseSupportFragment {
 			@Override
 			public void onNothingSelected(AdapterView<?> parent) {
 				
+			}
+		});
+		
+		btn1.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				LayoutInflater inflater = LayoutInflater.from(getActivity());
+				TextView tv = (TextView) inflater.inflate(R.layout.textview, null);
+				tv.setGravity(Gravity.CENTER);
+				String text = String.valueOf(new Random().nextInt(1000));
+				tv.setText(text);
+				vfTmp.addView(tv);
 			}
 		});
 	}

@@ -20,6 +20,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </TableRow>
+        
+        <TableRow>
+            <Button 
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="add a random text"/>
+            
+        </TableRow>
     </TableLayout>
 
     <ViewFlipper
