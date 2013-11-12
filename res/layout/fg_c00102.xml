@@ -8,49 +8,25 @@
     <TableLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" >
-
         <TableRow>
 
-            <Button
-                android:id="@+id/btn1"
+            <Spinner
+                android:id="@+id/spinner1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="push up" />
+                android:layout_height="wrap_content" />
 
-            <Button
-                android:id="@+id/btn2"
+            <Spinner
+                android:id="@+id/spinner2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="push left" />
-            
-            <Button
-                android:id="@+id/btn3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="scale_fade" />
-            
-            <Button
-                android:id="@+id/btn4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="scale_fade2" />
-        </TableRow>
-        
-        <TableRow>
-
-            <Button
-                android:id="@+id/btn5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="rotate" />
+                android:layout_height="wrap_content" />
         </TableRow>
     </TableLayout>
 
     <ViewFlipper
         android:id="@+id/vfTmp"
-        android:layout_centerInParent="true"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:layout_marginBottom="20dip"
         android:flipInterval="2000" >
 

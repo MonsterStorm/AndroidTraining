@@ -18,13 +18,26 @@
         <item>(012)Best Practices for Security and Privacy</item>
         <item>(013)Best Practices for Testing</item>
         <item>(014)Using Google Play to Distribute and Monetize</item>
+        <item>(015)App Components</item>
+        <item>(016)User Interface</item>
+        <item>(017)App Resources</item>
+        <item>(018)Animation and Graphics</item>
+        <item>(019)Computation</item>
+        <item>(020)Media and Camera</item>
+        <item>(021)Location and Sensors</item>
+        <item>(022)Connectivity</item>
+        <item>(023)Text and Input</item>
+        <item>(024)Data Storage</item>
+        <item>(025)Administration</item>
+        <item>(026)Web Apps</item>
+        <item>(027)Best Practices</item>
     </string-array>
     <string-array name="main_courses_000">
         <item>(01)View\'s draw process: onMeasure, onLayout, onDraw and etc</item>
     </string-array>
     <string-array name="main_courses_001">
         <item>(01)Dialog Open Animation</item>
-        <item>(02)Text Animation</item>
+        <item>(02)ViewFillper for text Animation</item>
     </string-array>
     <string-array name="main_courses_002">
         <item>(01)Building Your First App</item>
@@ -104,5 +117,101 @@
         <item>(02)Maintaining Multiple APKs</item>
         <item>(03)Monetizing Your App</item>
     </string-array>
-
+    <string-array name="main_courses_015">
+        <item>(01)App Fundamentals</item>
+        <item>(02)Activities</item>
+        <item>(03)Services</item>
+        <item>(04)Content Providers</item>
+        <item>(05)Intents and Intent Filters</item>
+        <item>(06)Processes and Threads</item>
+        <item>(07)Permissions</item>
+        <item>(08)App Widgets</item>
+        <item>(09)Android Manifest</item>
+    </string-array>
+    <string-array name="main_courses_016">
+        <item>(01)Overview</item>
+        <item>(02)Layouts</item>
+        <item>(03)Input Controls</item>
+        <item>(04)Input Events</item>
+        <item>(05)Menus</item>
+        <item>(06)Action Bar</item>
+        <item>(07)Settings</item>
+        <item>(08)Dialogs</item>
+        <item>(09)Notifications</item>
+        <item>(10)Toasts</item>
+        <item>(11)Search</item>
+        <item>(12)Drag and Drop</item>
+        <item>(13)Accessibility</item>
+        <item>(14)Styles and Themes</item>
+        <item>(15)Custom Components</item>
+    </string-array>
+    <string-array name="main_courses_017">
+        <item>(01)Overview</item>
+        <item>(02)Providing Resources</item>
+        <item>(03)Accessing Resources</item>
+        <item>(04)Handling Runtime Changes</item>
+        <item>(05)Localization</item>
+        <item>(06)Resource Types</item>
+    </string-array>
+    <string-array name="main_courses_018">
+        <item>(01)Overview</item>
+        <item>(02)Property Animation</item>
+        <item>(03)View Animation</item>
+        <item>(04)Drawable Animation</item>
+        <item>(05)Canvas and Drawables</item>
+        <item>(06)OpenGL ES</item>
+        <item>(07)Hardware Acceleration</item>
+    </string-array>
+    <string-array name="main_courses_019">
+        <item>(01)RenderScript</item>
+        <item>(02)Advanced RenderScript</item>
+        <item>(03)Runtime API Reference</item>
+    </string-array>
+    <string-array name="main_courses_020">
+        <item>(01)Media Playback</item>
+        <item>(02)Supported Media Formats</item>
+        <item>(03)Audio Capture</item>
+        <item>(04)JetPlayer</item>
+        <item>(05)Camera</item>
+    </string-array>
+    <string-array name="main_courses_021">
+        <item>(01)Location and Maps</item>
+        <item>(02)Location Strategies</item>
+        <item>(03)Sensors Overview</item>
+        <item>(04)Motion Sensors</item>
+        <item>(05)Position Sensors</item>
+        <item>(06)Environment Sensors</item>
+    </string-array>
+    <string-array name="main_courses_022">
+        <item>(01)Bluetooth</item>
+        <item>(02)NFC</item>
+        <item>(03)Wi-Fi P2P</item>
+        <item>(04)USB</item>
+        <item>(05)SIP</item>
+    </string-array>
+    <string-array name="main_courses_023">
+        <item>(01)Copy and Paste</item>
+        <item>(02)Creating an IME</item>
+        <item>(03)Spelling Checker</item>
+    </string-array>
+    <string-array name="main_courses_024">
+        <item>(01)Storage Options</item>
+        <item>(02)Data Backup</item>
+        <item>(03)App Install Location</item>
+    </string-array>
+    <string-array name="main_courses_025">
+        <item>(01)Device Policies</item>
+    </string-array>
+    <string-array name="main_courses_026">
+        <item>(01)Supporting Different Screens in Web Apps</item>
+        <item>(02)Building Web Apps in WebView</item>
+        <item>(03)Migrating to WebView in Android 4.4</item>
+        <item>(04)Debugging Web Apps</item>
+        <item>(05)Best Practices for Web Apps</item>
+    </string-array>
+    <string-array name="main_courses_027">
+        <item>(01)Compatibility</item>
+        <item>(02)Supporting Multiple Screens</item>
+        <item>(03)Supporting Tablets and Handsets</item>
+    </string-array>
 </resources>

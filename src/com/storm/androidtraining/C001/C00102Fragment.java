@@ -3,10 +3,12 @@ package com.storm.androidtraining.C001;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.view.animation.AnimationUtils;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.ViewFlipper;
 
 import com.cst.stormdroid.fragment.SDBaseSupportFragment;
@@ -15,11 +17,12 @@ import com.storm.androidtraining.R;
 public class C00102Fragment extends SDBaseSupportFragment {
 	private ViewFlipper vfTmp;
 
-	private Button btn1;
-	private Button btn2;
-	private Button btn3;
-	private Button btn4;
-	private Button btn5;
+	private Spinner spinner1;
+	private Spinner spinner2;
+	private String[] array1 = { "push_up_in", "push_left_in", "scalefade_in", "scalefade_in2", "rotate_in" };
+	private int[] anim1 = {R.anim.push_up_in, R.anim.push_left_in, R.anim.scalefade_in, R.anim.scalefade_in2, R.anim.rotate_in};
+	private String[] array2 = { "push_up_out", "push_left_out", "scalefade_out", "scalefade_out2", "rotate_out" };
+	private int[] anim2 = {R.anim.push_up_out, R.anim.push_left_out, R.anim.scalefade_out, R.anim.scalefade_out2, R.anim.rotate_out};
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -30,12 +33,11 @@ public class C00102Fragment extends SDBaseSupportFragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		super.onCreateView(inflater, container, savedInstanceState);
 		View view = inflater.inflate(R.layout.fg_c00102, container, false);
+
+		spinner1 = (Spinner) view.findViewById(R.id.spinner1);
+		spinner2 = (Spinner) view.findViewById(R.id.spinner2);
+
 		vfTmp = (ViewFlipper) view.findViewById(R.id.vfTmp);
-		btn1 = (Button) view.findViewById(R.id.btn1);
-		btn2 = (Button) view.findViewById(R.id.btn2);
-		btn3 = (Button) view.findViewById(R.id.btn3);
-		btn4 = (Button) view.findViewById(R.id.btn4);
-		btn5 = (Button) view.findViewById(R.id.btn5);
 		vfTmp.startFlipping();
 		return view;
 	}
@@ -43,47 +45,36 @@ public class C00102Fragment extends SDBaseSupportFragment {
 	@Override
 	protected void initData() {
 		super.initData();
+
+		ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, array1);
+		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		spinner1.setAdapter(adapter);
+
+		ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, array2);
+		adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		spinner2.setAdapter(adapter2);
 	}
 
 	@Override
 	protected void bindActions() {
-		btn1.setOnClickListener(new OnClickListener() {
+		spinner1.setOnItemSelectedListener(new OnItemSelectedListener() {
 			@Override
-			public void onClick(View v) {
-				vfTmp.setInAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.push_up_in));
-				vfTmp.setOutAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.push_up_out));
+			public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+				vfTmp.setInAnimation(getActivity(), anim1[position]);
+			}
+			@Override
+			public void onNothingSelected(AdapterView<?> parent) {
+				
 			}
 		});
-
-		btn2.setOnClickListener(new OnClickListener() {
+		spinner2.setOnItemSelectedListener(new OnItemSelectedListener() {
 			@Override
-			public void onClick(View v) {
-				vfTmp.setInAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.push_left_in));
-				vfTmp.setOutAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.push_left_out));
+			public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+				vfTmp.setOutAnimation(getActivity(), anim2[position]);
 			}
-		});
-		
-		btn3.setOnClickListener(new OnClickListener() {
 			@Override
-			public void onClick(View v) {
-				vfTmp.setInAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.scalefade_in));
-				vfTmp.setOutAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.scalefade_out));
-			}
-		});
-		
-		btn4.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				vfTmp.setInAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.scalefade_in2));
-				vfTmp.setOutAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.scalefade_out2));
-			}
-		});
-		
-		btn5.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				vfTmp.setInAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.rotate_in));
-				vfTmp.setOutAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.rotate_out));
+			public void onNothingSelected(AdapterView<?> parent) {
+				
 			}
 		});
 	}
