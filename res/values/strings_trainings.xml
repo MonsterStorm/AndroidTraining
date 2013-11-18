@@ -34,6 +34,7 @@
     </string-array>
     <string-array name="main_courses_000">
         <item>(01)View\'s draw process: onMeasure, onLayout, onDraw and etc</item>
+        <item>(02)ImageView\'s scaleType</item>
     </string-array>
     <string-array name="main_courses_001">
         <item>(01)Dialog Open Animation</item>
