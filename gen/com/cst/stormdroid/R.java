@@ -432,10 +432,10 @@ public final class R {
 	public static final class id {
 		public static final int ldpi = 0x7f070010;
 		public static final int abs__action_bar_container = 0x7f070023;
-		public static final int menu_group = 0x7f07004b;
+		public static final int menu_group = 0x7f07004c;
 		public static final int normal = 0x7f070001;
 		public static final int abs__search_go_btn = 0x7f070034;
-		public static final int menu_a = 0x7f07004a;
+		public static final int menu_a = 0x7f07004b;
 		public static final int abs__default_activity_button = 0x7f07001c;
 		public static final int homeAsUp = 0x7f070006;
 		public static final int xhdpi = 0x7f070013;
@@ -448,7 +448,7 @@ public final class R {
 		public static final int abs__search_voice_btn = 0x7f070035;
 		public static final int disableHome = 0x7f070009;
 		public static final int showTitle = 0x7f070007;
-		public static final int menu_group_a = 0x7f07004c;
+		public static final int menu_group_a = 0x7f07004d;
 		public static final int abs__up = 0x7f07000b;
 		public static final int abs__split_action_bar = 0x7f070027;
 		public static final int abs__action_context_bar = 0x7f070025;
@@ -460,7 +460,7 @@ public final class R {
 		public static final int abs__search_mag_icon = 0x7f07002f;
 		public static final int abs__checkbox = 0x7f070020;
 		public static final int abs__search_close_btn = 0x7f070032;
-		public static final int panel = 0x7f070048;
+		public static final int panel = 0x7f070049;
 		public static final int abs__image = 0x7f07001b;
 		public static final int showCustom = 0x7f070008;
 		public static final int abs__action_mode_bar_stub = 0x7f070028;
@@ -478,7 +478,7 @@ public final class R {
 		public static final int useLogo = 0x7f070004;
 		public static final int hdpi = 0x7f070012;
 		public static final int tabMode = 0x7f070003;
-		public static final int stub = 0x7f070047;
+		public static final int stub = 0x7f070048;
 		public static final int abs__search_edit_frame = 0x7f07002e;
 		public static final int mdpi = 0x7f070011;
 		public static final int abs__radio = 0x7f070021;

@@ -11,7 +11,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Height of ImageView is 100dp, and width is wrap_content, set width and height with the same value will cause no effect"
+            android:text="Height/width of ImageView is 100dp, and width/height is wrap_content, set width and height with the same value will cause no effect"
             android:textColor="@color/white" />
 
         <Spinner
@@ -72,13 +72,25 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Large With ScaleType:"
+            android:text="Large With ScaleType (height 100dp):"
             android:textColor="@color/white" />
 
         <ImageView
             android:id="@+id/ivTmp3"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
+            android:background="@color/gray"
+            android:src="@drawable/img1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Large With ScaleType (width 100dp):"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/ivTmp4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
             android:background="@color/gray"
             android:src="@drawable/img1" />
     </LinearLayout>

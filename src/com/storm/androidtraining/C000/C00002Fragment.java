@@ -24,6 +24,7 @@ public class C00002Fragment extends SDBaseSupportFragment {
 	private ImageView ivTmp1;
 	private ImageView ivTmp2;
 	private ImageView ivTmp3;
+	private ImageView ivTmp4;
 	private Spinner spinner1;
 
 	private String[] array1 = new String[] { "matrix", "fitXY", "fitStart", "fitCenter", "fitEnd", "center", "centerCrop", "centerInside" };
@@ -40,6 +41,7 @@ public class C00002Fragment extends SDBaseSupportFragment {
 		ivTmp1 = (ImageView) view.findViewById(R.id.ivTmp1);
 		ivTmp2 = (ImageView) view.findViewById(R.id.ivTmp2);
 		ivTmp3 = (ImageView) view.findViewById(R.id.ivTmp3);
+		ivTmp4 = (ImageView) view.findViewById(R.id.ivTmp4);
 		spinner1 = (Spinner) view.findViewById(R.id.spinner1);
 		return view;
 	}
@@ -63,12 +65,14 @@ public class C00002Fragment extends SDBaseSupportFragment {
 					ivTmp1.setScaleType(ScaleType.MATRIX);
 					ivTmp2.setScaleType(ScaleType.MATRIX);
 					ivTmp3.setScaleType(ScaleType.MATRIX);
+					ivTmp4.setScaleType(ScaleType.MATRIX);
 					break;
 				case 1:
 
 					ivTmp1.setScaleType(ScaleType.FIT_XY);
 					ivTmp2.setScaleType(ScaleType.FIT_XY);
 					ivTmp3.setScaleType(ScaleType.FIT_XY);
+					ivTmp4.setScaleType(ScaleType.FIT_XY);
 					break;
 
 				case 2:
@@ -76,36 +80,42 @@ public class C00002Fragment extends SDBaseSupportFragment {
 					ivTmp1.setScaleType(ScaleType.FIT_START);
 					ivTmp2.setScaleType(ScaleType.FIT_START);
 					ivTmp3.setScaleType(ScaleType.FIT_START);
+					ivTmp4.setScaleType(ScaleType.FIT_START);
 					break;
 				case 3:
 
 					ivTmp1.setScaleType(ScaleType.FIT_CENTER);
 					ivTmp2.setScaleType(ScaleType.FIT_CENTER);
 					ivTmp3.setScaleType(ScaleType.FIT_CENTER);
+					ivTmp4.setScaleType(ScaleType.FIT_CENTER);
 					break;
 				case 4:
 
 					ivTmp1.setScaleType(ScaleType.FIT_END);
 					ivTmp2.setScaleType(ScaleType.FIT_END);
 					ivTmp3.setScaleType(ScaleType.FIT_END);
+					ivTmp4.setScaleType(ScaleType.FIT_END);
 					break;
 				case 5:
 
 					ivTmp1.setScaleType(ScaleType.CENTER);
 					ivTmp2.setScaleType(ScaleType.CENTER);
 					ivTmp3.setScaleType(ScaleType.CENTER);
+					ivTmp4.setScaleType(ScaleType.CENTER);
 					break;
 				case 6:
 
 					ivTmp1.setScaleType(ScaleType.CENTER_CROP);
 					ivTmp2.setScaleType(ScaleType.CENTER_CROP);
 					ivTmp3.setScaleType(ScaleType.CENTER_CROP);
+					ivTmp4.setScaleType(ScaleType.CENTER_CROP);
 					break;
 				case 7:
 
 					ivTmp1.setScaleType(ScaleType.CENTER_INSIDE);
 					ivTmp2.setScaleType(ScaleType.CENTER_INSIDE);
 					ivTmp3.setScaleType(ScaleType.CENTER_INSIDE);
+					ivTmp4.setScaleType(ScaleType.CENTER_INSIDE);
 					break;
 				}
 			}
